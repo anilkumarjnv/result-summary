@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="result-card">
+        <div class="header"> Your Result</div>
+        <div class="score">
+          <p id="scored">76</p>
+          <p id="out-of">of 100</p>
+        </div>
+        <div class="comment">Great</div>
+        <div class="description"> You scored higher than 65% of the people who have taken these tests.</div>
+      </div>
+      <div class="summary">
+        <div class="header">Summary</div>
+        <div class="category Reaction">
+          <span id="image">
+          <img src="./assets/images/icon-reaction.svg" alt="">
+          </span>
+          <span id="text">Reaction</span>
+          <span id="score">80</span>
+          <span id="out-of">/ 100</span>
+        </div>
+        <div class="category Memory">
+          <span id="image">
+          <img src="./assets/images/icon-memory.svg" alt="">
+          </span>
+          <span id="text">Memory</span>
+          <span id="score">92</span>
+          <span id="out-of">/ 100</span>
+        </div>
+        <div class="category Verbal">
+          <span id="image">
+          <img src="./assets/images/icon-verbal.svg" alt="">
+          </span>
+          <span id="text">Verbal</span>
+          <span id="score">61</span>
+          <span id="out-of">/ 100</span>
+        </div>
+        <div class="category Visual">
+          <span id="image">
+          <img src="./assets/images/icon-visual.svg" alt="">
+          </span>
+          <span id="text">Visual</span>
+          <span id="score">72</span>
+          <span id="out-of">/ 100</span>
+        </div>
+        <div class="button">Continue</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded',()=>{
+      fetch('data.json')
+      .then(response => response.json())
+      .then(data=>{
+        data.map(item =>{
+        const image=document.getElementById('image');
+        const img=document.createElement('img');
+        img.src=item.icon;
+        img.alt="Icon";
+        image.appendChild(img);
+
+        document.getElementById('text').textContent=item.category;
+        })
+    
+      })
+      .catch(error=>console.error("Error Fetching data",error));
+    })
+  </script> -->
+</body>
+
+</html>

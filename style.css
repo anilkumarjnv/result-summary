@@ -1,0 +1,164 @@
+body,html{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+    letter-spacing: 0.5px;
+}
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.card{
+    display: flex;
+    width:800px;
+    height:500px;
+    background-color: white;
+    border:0.2px solid whitesmoke;
+    border-radius: 40px;
+
+}
+.result-card{
+    width:400px;
+    margin: 0;
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    border-radius: 40px;
+
+}
+.result-card .header{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    color:white;
+    opacity:0.7;
+    margin-top: 27px;
+    padding:10px;
+   
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    row-gap: 0;
+    width: 150px;;
+    height: 150px;
+    border-radius: 50%;
+    padding: 25px;
+
+    background-image:linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+}
+#scored{
+    font-size: 70px;
+    color: white;
+    padding: 0;
+    margin:10px 0 0 0  ;
+    font-weight: 800;
+
+}
+#out-of{
+    padding-top: 0;
+    margin-top: 0;
+    color: white;
+    opacity: 0.6;
+}
+.comment{
+    text-align: center;
+    color: white;
+    font-size:  35px;
+    font-weight: 700;
+}
+.description{
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    opacity: 0.7;
+    width: 260px;
+    margin: 0 auto;
+
+}
+
+.summary{
+    width: 320px;
+    margin: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left:35px;
+
+}
+.summary .header{
+    font-size: 25px;
+    font-weight: 700;
+    color:black;
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+.category{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    
+
+}
+.category img{
+    margin-right: 5px;
+    margin-left: 15px;
+}
+.category #text{
+    padding:10px;
+    margin-left: 3px;
+    width: 80px;
+
+}
+.category #score{
+    margin-left: 5em;
+    color:hsl(224, 30%, 27%)
+}
+.category #out-of{
+    color:hsl(224, 30%, 27%)
+
+}
+
+.button{
+    text-align: center;
+    background-color:  hsl(224, 30%, 27%);
+    color: white;
+    padding:15px;
+    font-size: 18px;
+    border-radius: 30px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.button:hover{
+    background-image:linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.Reaction{
+    color:hsl(0, 100%, 67%);
+    background-color: hsl(0, 75%, 95%);
+}
+.Memory{
+    color:hsl(39, 100%, 56%);
+    background-color: hsl(39, 100%, 95%);
+}
+.Verbal{
+    color:hsl(166, 100%, 37%);
+    background-color: hsl(160, 39%, 95%);
+   
+}
+.Visual{
+    color:hsl(234, 85%, 45%);
+    background-color: hsl(235, 38%, 95%);
+}
+
